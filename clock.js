@@ -1,0 +1,1 @@
+document.getElementById("display_clock").innerHTML="06:37"
