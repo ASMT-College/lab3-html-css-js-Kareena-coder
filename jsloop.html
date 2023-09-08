@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="carsList"></div>
+    <!-- <table>
+        <tr>
+            <td>Name:</td>
+            <td>Company:</td>
+        </tr>
+        <tr>
+            <td>car1</td>
+            <td>maruti</td>
+        </tr>
+        <tr>
+            <td>car2</td>
+            <td>suzuki</td>
+        </tr> -->
+
+    </table>
+    <script>
+        var myCars = [
+            {
+                name: "car1",
+                company: "maruti"
+            }
+        {
+                name: "car2",
+                company: "suzuki"
+            }
+        ];
+        var myTable = `<table>
+        <tr>
+            <td>Name:</td>
+            <td>Company:</td>
+        </tr>`;
+        myTable= myTable + "</table>";
+        document.getElementById('carsList').innerHTML = myTable;
+    </script>
+</body>
+
+</html>
