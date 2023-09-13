@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function showname(){
+        document.write("The name is:" + this.name + "<br>")
+       }
+        //Create direct instance of objects
+        var ram={name:"ram",age:25,address:"sitapaila",showDetail:showname}
+        document.write("Name is:"+ram.name + "<br>")
+        // objects using function or class(dherr ota object banauna kaam lagxxa)
+        function person(n,a,ad){
+            this.name=n;
+            this.age=a;
+            this.address=ad;
+            this.showDetail=showname;
+        }
+        
+        var kareena=new person("kareena",25,"sitapaila")
+       kareena.showDetail();
+
+       
+    </script>
+</body>
+</html>

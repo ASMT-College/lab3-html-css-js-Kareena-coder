@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function area(){
+            document.write(Math.PI*this.radius*this.radius);
+        }
+        function circle(r)
+        {
+            this.radius=r;
+            this.showArea=area;
+        }
+
+        var myCircle= new circle(20);
+        myCircle.showArea();
+    </script>
+</body>
+</html>
